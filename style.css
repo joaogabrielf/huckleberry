@@ -1,12 +1,66 @@
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  --green: hsl(160deg, 100%, 30%);
+  --gold-100: hsl(45deg, 100%, 50%);
+  --gold-500: hsl(45deg, 100%, 40%);
+  --white: hsl(0deg, 0%, 100%);
+  --black: hsl(0deg, 0%, 0%);
+  --gray-100: hsl(0deg, 0%, 60%);
+  --gray-300: hsl(0deg, 0%, 40%);
+  --gray-400: hsl(0deg, 0%, 30%);
+  --gray-600: hsl(0deg, 0%, 10%);
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--white);
 }
 
-/* Add styles here! */
+.title, p, .indented-heading {
+  color: var(--black);
+}
+
+strong {
+  color: var(--green);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 24rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  width: fit-content;
+}
+
+main {
+  background-color: var(--gray-300);
+  padding: 4.5rem 0;
+}
+
+.card {
+  min-height: 312px;
+  background-color: var(--white);
+  padding: 8px 24px 24px;
+  width: fit-content;
+  max-width: 52rem;
+  border-bottom: 8px solid var(--gray-100);
+}
+
+.indented-heading {
+  background-color: var(--gold-100);
+  margin-top: auto;
+  margin-left: -2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  border-bottom: 8px solid var(--gold-500);
+}
